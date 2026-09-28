@@ -2,7 +2,7 @@ name: Trae Daily Checkin
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "23 16 * * *"
   workflow_dispatch: {}
 
 permissions:
