@@ -70,6 +70,60 @@ jobs:
           git commit -m "chore: update last checkin result [skip ci]" || echo "nothing to commit"
           git push
 
+      - name: Save credits detail
+        if: always()
+        env:
+          TRAE_ACCOUNTS: ${{ secrets.TRAE_ACCOUNTS }}
+        run: |
+          python - <<'PY'
+          import datetime, json, os
+          bj = datetime.timezone(datetime.timedelta(hours=8))
+          out = {'updated': datetime.datetime.now(bj).strftime('%Y-%m-%d %H:%M'), 'accounts': []}
+          try:
+              import trae_checkin as t
+              for acc in t.load_accounts():
+                  name = acc.get('_name') or acc.get('name') or acc.get('uid', '?')
+                  item = {'name': name}
+                  try:
+                      st, text = t._post(t.EP_ENTITLE, t.ug_headers(acc['accessToken'], acc.get('deviceId')), '{"require_usage": true}', 15)
+                      d = json.loads(text)
+                      root = d.get('data') or d
+                      us = root.get('usage_summary') or {}
+                      item['usage_summary'] = us
+                      try:
+                          item['balance'] = float(us.get('total_amount') or 0) - float(us.get('consumed_amount') or 0)
+                      except Exception:
+                          item['balance'] = None
+                      packs = []
+                      for p in (root.get('user_entitlement_pack_list') or []):
+                          bi = p.get('entitlement_base_info') or {}
+                          q = bi.get('quota') or {}
+                          usage = p.get('usage') or {}
+                          row = {
+                              'name': bi.get('name') or bi.get('entitlement_id') or '?',
+                              'limit': q.get('credits_limit'),
+                              'used': usage.get('credits_amount'),
+                          }
+                          for k, v in bi.items():
+                              if 'time' in str(k).lower() or 'expire' in str(k).lower() or 'valid' in str(k).lower():
+                                  row[k] = v
+                          packs.append(row)
+                      item['packs'] = packs
+                  except Exception as e:
+                      item['error'] = str(e)
+                  out['accounts'].append(item)
+          except Exception as e:
+              out['error'] = str(e)
+          os.makedirs('data', exist_ok=True)
+          with open('data/credits_detail.json', 'w', encoding='utf-8') as f:
+              json.dump(out, f, ensure_ascii=False, indent=1)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/credits_detail.json
+          git commit -m "chore: update credits detail [skip ci]" || echo "nothing to commit"
+          git push
+
       - name: Notify on failure
         if: failure()
         run: echo "::warning::签到脚本执行失败，请检查 secrets 和日志"
