@@ -1,11 +1,233 @@
 {
- "updated": "2026-10-27 05:05",
+ "updated": "2026-10-27 21:05",
  "accounts": [
   {
    "name": "用户4667277278",
-   "usage_summary": {},
-   "balance": 0.0,
-   "packs": []
+   "usage_summary": {
+    "consumed_amount": 0,
+    "consumption_ratio": 0,
+    "total_amount": 3500
+   },
+   "balance": 3500.0,
+   "packs": [
+    {
+     "name": "free_utc202610_1470517197414843",
+     "limit": null,
+     "used": null,
+     "end_time": 1793462399,
+     "start_time": 1790784000
+    },
+    {
+     "name": "monthly_bonus_202610_1470517197414843",
+     "limit": 500,
+     "used": null,
+     "end_time": 1793462399,
+     "start_time": 1790784000
+    },
+    {
+     "name": "checkin_20260928_1470517197414843",
+     "limit": 150,
+     "used": null,
+     "end_time": 1793240394,
+     "start_time": 1790561994
+    },
+    {
+     "name": "checkin_20260929_1470517197414843",
+     "limit": 150,
+     "used": null,
+     "end_time": 1793295609,
+     "start_time": 1790617209
+    },
+    {
+     "name": "checkin_20260930_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793390369,
+     "start_time": 1790711969
+    },
+    {
+     "name": "checkin_20261001_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793478038,
+     "start_time": 1790799638
+    },
+    {
+     "name": "checkin_20261002_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793556825,
+     "start_time": 1790878425
+    },
+    {
+     "name": "checkin_20261003_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793648061,
+     "start_time": 1790969661
+    },
+    {
+     "name": "checkin_20261004_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793727107,
+     "start_time": 1791048707
+    },
+    {
+     "name": "checkin_20261005_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793816698,
+     "start_time": 1791138298
+    },
+    {
+     "name": "checkin_20261006_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793914107,
+     "start_time": 1791235707
+    },
+    {
+     "name": "checkin_20261007_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1793997078,
+     "start_time": 1791318678
+    },
+    {
+     "name": "checkin_20261008_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794079254,
+     "start_time": 1791400854
+    },
+    {
+     "name": "checkin_20261009_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794159256,
+     "start_time": 1791480856
+    },
+    {
+     "name": "checkin_20261010_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794241996,
+     "start_time": 1791563596
+    },
+    {
+     "name": "checkin_20261012_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794458932,
+     "start_time": 1791780532
+    },
+    {
+     "name": "checkin_20261013_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794524711,
+     "start_time": 1791846311
+    },
+    {
+     "name": "checkin_20261014_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794604898,
+     "start_time": 1791926498
+    },
+    {
+     "name": "checkin_20261015_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794687335,
+     "start_time": 1792008935
+    },
+    {
+     "name": "checkin_20261016_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794772599,
+     "start_time": 1792094199
+    },
+    {
+     "name": "checkin_20261017_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794857786,
+     "start_time": 1792179386
+    },
+    {
+     "name": "checkin_20261018_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1794940533,
+     "start_time": 1792262133
+    },
+    {
+     "name": "checkin_20261019_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795027374,
+     "start_time": 1792348974
+    },
+    {
+     "name": "checkin_20261020_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795122595,
+     "start_time": 1792444195
+    },
+    {
+     "name": "checkin_20261021_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795204952,
+     "start_time": 1792526552
+    },
+    {
+     "name": "checkin_20261022_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795292098,
+     "start_time": 1792613698
+    },
+    {
+     "name": "checkin_20261023_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795378384,
+     "start_time": 1792699984
+    },
+    {
+     "name": "checkin_20261024_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795463961,
+     "start_time": 1792785561
+    },
+    {
+     "name": "checkin_20261025_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795546288,
+     "start_time": 1792867888
+    },
+    {
+     "name": "checkin_20261026_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795633691,
+     "start_time": 1792955291
+    },
+    {
+     "name": "checkin_20261027_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1795784741,
+     "start_time": 1793106341
+    }
+   ]
   }
  ]
 }
