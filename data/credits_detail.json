@@ -1,28 +1,28 @@
 {
- "updated": "2026-10-31 04:54",
+ "updated": "2026-11-01 04:06",
  "accounts": [
   {
    "name": "用户4667277278",
    "usage_summary": {
     "consumed_amount": 0,
     "consumption_ratio": 0,
-    "total_amount": 3500
+    "total_amount": 3600
    },
-   "balance": 3500.0,
+   "balance": 3600.0,
    "packs": [
     {
-     "name": "free_utc202610_1470517197414843",
+     "name": "free_utc202611_1470517197414843",
      "limit": null,
      "used": null,
-     "end_time": 1793462399,
-     "start_time": 1790784000
+     "end_time": 1796054399,
+     "start_time": 1793462400
     },
     {
-     "name": "monthly_bonus_202610_1470517197414843",
+     "name": "monthly_bonus_202611_1470517197414843",
      "limit": 500,
      "used": null,
-     "end_time": 1793462399,
-     "start_time": 1790784000
+     "end_time": 1796054399,
+     "start_time": 1793462400
     },
     {
      "name": "checkin_20261001_1470517197414843",
@@ -233,6 +233,13 @@
      "used": null,
      "end_time": 1796072042,
      "start_time": 1793393642
+    },
+    {
+     "name": "checkin_20261101_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1796155579,
+     "start_time": 1793477179
     }
    ]
   }
