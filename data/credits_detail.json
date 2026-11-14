@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 06:02",
+ "updated": "2026-11-15 04:48",
  "accounts": [
   {
    "name": "用户4667277278",
@@ -23,13 +23,6 @@
      "used": null,
      "end_time": 1796054399,
      "start_time": 1793462400
-    },
-    {
-     "name": "checkin_20261015_1470517197414843",
-     "limit": 100,
-     "used": null,
-     "end_time": 1794687335,
-     "start_time": 1792008935
     },
     {
      "name": "checkin_20261016_1470517197414843",
@@ -233,6 +226,13 @@
      "used": null,
      "end_time": 1797285720,
      "start_time": 1794607320
+    },
+    {
+     "name": "checkin_20261115_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1797367718,
+     "start_time": 1794689318
     }
    ]
   }
