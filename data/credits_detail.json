@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 08:53",
+ "updated": "2026-11-26 08:31",
  "accounts": [
   {
    "name": "轻井泽",
@@ -23,13 +23,6 @@
      "used": null,
      "end_time": 1796054399,
      "start_time": 1793462400
-    },
-    {
-     "name": "checkin_20261026_1470517197414843",
-     "limit": 100,
-     "used": null,
-     "end_time": 1795633691,
-     "start_time": 1792955291
     },
     {
      "name": "checkin_20261027_1470517197414843",
@@ -233,6 +226,13 @@
      "used": null,
      "end_time": 1798246436,
      "start_time": 1795568036
+    },
+    {
+     "name": "checkin_20261126_1470517197414843",
+     "limit": 100,
+     "used": null,
+     "end_time": 1798331514,
+     "start_time": 1795653114
     }
    ]
   }
