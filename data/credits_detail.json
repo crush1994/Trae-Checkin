@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-27 08:40",
+ "updated": "2026-11-28 08:07",
  "accounts": [
   {
    "name": "轻井泽",
    "usage_summary": {
     "consumed_amount": 0,
     "consumption_ratio": 0,
-    "total_amount": 3600
+    "total_amount": 3500
    },
-   "balance": 3600.0,
+   "balance": 3500.0,
    "packs": [
     {
      "name": "free_utc202611_992206949191114",
@@ -23,20 +23,6 @@
      "used": null,
      "end_time": 1796054399,
      "start_time": 1793462400
-    },
-    {
-     "name": "checkin_20261027_992206949191114",
-     "limit": 100,
-     "used": null,
-     "end_time": 1795784741,
-     "start_time": 1793106341
-    },
-    {
-     "name": "checkin_20261028_992206949191114",
-     "limit": 100,
-     "used": null,
-     "end_time": 1795812496,
-     "start_time": 1793134096
     },
     {
      "name": "checkin_20261029_992206949191114",
@@ -240,6 +226,13 @@
      "used": null,
      "end_time": 1798418457,
      "start_time": 1795740057
+    },
+    {
+     "name": "checkin_20261128_992206949191114",
+     "limit": 100,
+     "used": null,
+     "end_time": 1798502858,
+     "start_time": 1795824458
     }
    ]
   }
